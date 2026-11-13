@@ -148,12 +148,12 @@ Các `[CẢNH BÁO]` còn giữ nguyên và lý do:
 
    ![JSON export](images/4_json_export.png)
 
-Nguồn ảnh: COCO val2017 / Wikimedia Commons.
+Nguồn ảnh: COCO val2017.
 
 ## 7. Tự đánh giá
 
 1. Lỗi bạn mắc nhiều nhất hôm nay, và cách bạn sẽ tránh ở dự án thật:
-- 000000323705.jpg #1 (các điểm chỉ trải cao 28 px, dưới 60 px): giữ nguyên. Người bóng đen này cao khoảng 86 px, nhưng đầu (mặt không thấy) và chân (bị lan can che) đều đặt v = 0, nên các điểm v > 0 chỉ trải từ vai đến hông (28 px). Người không bị cắt khung, nên bỏ qua cảnh báo này.
+- Lỗi nhiều nhất là cờ visibility và đếm người, không phải trái/phải: một skeleton thừa do AI Assistance tạo ở 000000043719, một người bị bỏ sót ở cùng ảnh, và người bóng đen ở 000000323705 bị để mọi điểm `v = 2`. Ở dự án thật tôi sẽ đếm người thật trong ảnh trước khi gán, xóa ngay mọi skeleton có khung bao quá nhỏ, và không tin cờ mặc định của model: điểm không thấy phải đặt lại thành `outside`.
    ...
 
 2. Một quy tắc bạn đề xuất thêm vào guideline (kèm ảnh ví dụ nếu có):
