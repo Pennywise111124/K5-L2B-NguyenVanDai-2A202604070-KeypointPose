@@ -9,7 +9,7 @@ Dữ liệu: 12 ảnh người COCO val2017 (Lin et al., 2014) và 8 ảnh chân
 - Họ tên: Nguyễn Văn Đại
 - MSSV: 2A202604070
 - Email: vdai20204@gmail.com
-- Link repository: https://github.com/Pennywise111124/K5-L2B-NguyenVanDai-2A202604070-KeypointPose-Student
+- Link repository: https://github.com/Pennywise111124/K5-L2B-NguyenVanDai-2A202604070-KeypointPose
 - Phiên bản CVAT (Help → About): https://app.cvat.ai/
 - Máy: dùng CVAT cloud (app.cvat.ai), không chạy CVAT local nên không có chế độ đầy đủ / lite
 - Bộ ảnh (`src/exports/assignment.json` do `lab.py setup` tạo): có. File được tạo bằng prepare_cloud.py, script này gọi đúng hàm chia ảnh theo MSSV của lab.py, vì lab.py setup chỉ chạy với CVAT local
